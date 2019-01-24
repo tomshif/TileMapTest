@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42E382421F9F62F009605B3 /* random.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E382321F9F62F009605B3 /* random.swift */; };
 		F47D206D21F8D27900A867A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D206C21F8D27900A867A9 /* AppDelegate.swift */; };
 		F47D206F21F8D27900A867A9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F47D206E21F8D27900A867A9 /* GameScene.sks */; };
 		F47D207121F8D27900A867A9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F47D207021F8D27900A867A9 /* Actions.sks */; };
@@ -16,6 +17,8 @@
 		F47D207A21F8D28A00A867A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47D207821F8D28A00A867A9 /* Main.storyboard */; };
 		F47D208621F8D28A00A867A9 /* TileMapTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D208521F8D28A00A867A9 /* TileMapTestTests.swift */; };
 		F47D209121F8D28A00A867A9 /* TileMapTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D209021F8D28A00A867A9 /* TileMapTestUITests.swift */; };
+		F47D209F21F8D2F100A867A9 /* testTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = F47D209E21F8D2F100A867A9 /* testTileSet.sks */; };
+		F47D20A121F8E5AD00A867A9 /* serengetiTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = F47D20A021F8E5AD00A867A9 /* serengetiTiles.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F42E382321F9F62F009605B3 /* random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = random.swift; sourceTree = "<group>"; };
 		F47D206921F8D27900A867A9 /* TileMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47D206C21F8D27900A867A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47D206E21F8D27900A867A9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		F47D208C21F8D28A00A867A9 /* TileMapTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TileMapTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47D209021F8D28A00A867A9 /* TileMapTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileMapTestUITests.swift; sourceTree = "<group>"; };
 		F47D209221F8D28A00A867A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47D209E21F8D2F100A867A9 /* testTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testTileSet.sks; sourceTree = "<group>"; };
+		F47D20A021F8E5AD00A867A9 /* serengetiTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = serengetiTiles.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +114,12 @@
 				F47D207221F8D27900A867A9 /* GameScene.swift */,
 				F47D207421F8D27900A867A9 /* ViewController.swift */,
 				F47D207621F8D28A00A867A9 /* Assets.xcassets */,
+				F47D209E21F8D2F100A867A9 /* testTileSet.sks */,
 				F47D207821F8D28A00A867A9 /* Main.storyboard */,
 				F47D207B21F8D28A00A867A9 /* Info.plist */,
 				F47D207C21F8D28A00A867A9 /* TileMapTest.entitlements */,
+				F47D20A021F8E5AD00A867A9 /* serengetiTiles.sks */,
+				F42E382321F9F62F009605B3 /* random.swift */,
 			);
 			path = TileMapTest;
 			sourceTree = "<group>";
@@ -239,8 +248,10 @@
 			files = (
 				F47D206F21F8D27900A867A9 /* GameScene.sks in Resources */,
 				F47D207721F8D28A00A867A9 /* Assets.xcassets in Resources */,
+				F47D20A121F8E5AD00A867A9 /* serengetiTiles.sks in Resources */,
 				F47D207121F8D27900A867A9 /* Actions.sks in Resources */,
 				F47D207A21F8D28A00A867A9 /* Main.storyboard in Resources */,
+				F47D209F21F8D2F100A867A9 /* testTileSet.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42E382421F9F62F009605B3 /* random.swift in Sources */,
 				F47D207521F8D27900A867A9 /* ViewController.swift in Sources */,
 				F47D207321F8D27900A867A9 /* GameScene.swift in Sources */,
 				F47D206D21F8D27900A867A9 /* AppDelegate.swift in Sources */,
