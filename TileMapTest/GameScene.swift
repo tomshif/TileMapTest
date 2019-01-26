@@ -35,8 +35,8 @@ class GameScene: SKScene {
 
         let tileSet = SKTileSet(named: "Serengeti Tiles")!
         let tileSize = CGSize(width: 128, height: 128)
-        let columns = 1024
-        let rows = 1024
+        let columns = 256
+        let rows = 256
         let waterTiles = tileSet.tileGroups.first { $0.name == "mud01" }
         let grassTiles = tileSet.tileGroups.first { $0.name == "grass02"}
         let deadGrass = tileSet.tileGroups.first { $0.name == "deadGrass"}
@@ -92,12 +92,13 @@ class GameScene: SKScene {
     func makeNoiseMap(columns: Int, rows: Int) -> GKNoiseMap {
         
         let seed=Int32(random(min: 1, max: 50000))
-        let source = GKBillowNoiseSource(frequency: 0.015, octaveCount: 2, persistence: 0.2, lacunarity: 0.005, seed: seed)
-        //source.persistence = 0.8
+        //let source = GKBillowNoiseSource(frequency: 0.015, octaveCount: 2, persistence: 0.2, lacunarity: 0.005, seed: seed)
+        let source=GKPerlinNoiseSource()
+        source.persistence = 0.8
         
         let noise = GKNoise(source)
         let sizeRange=random(min: 3.5, max: 6.0)
-        let size = vector2(Double(columns), Double(rows))
+        let size = vector2(Double(sizeRange), Double(sizeRange))
         let origin = vector2(0.0, 0.0)
         let sampleCount = vector2(Int32(columns), Int32(rows))
         
